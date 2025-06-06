@@ -1,0 +1,27 @@
+package ASSIGNMENT1;
+
+/**
+ * Customer class stores information about the renter.
+ */
+public class Customer {
+    private String fullName;
+    private String licenseID;
+
+    public Customer(String fullName, String licenseID) {
+        this.fullName = fullName;
+        this.licenseID = licenseID;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getLicenseID() {
+        return licenseID;
+    }
+
+    // Print customer info in a friendly way
+    public String toString() {
+        return fullName + " (License: " + licenseID + ")";
+    }
+}
